@@ -1,0 +1,28 @@
+﻿빌드 시작: 2019-06-14 오후 6:34:02
+     1>2 노드의 "C:\Users\JunY\Documents\Visual Studio 2010\Projects\Week13_Day2\ManyShapes\ManyShapes.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "Debug\ManyShapes.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\ManyShapes.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\ManyShapes.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ChildView.cpp MainFrm.cpp ManyShapes.cpp MyCircle.cpp MyCurve.cpp MyRect.cpp MyShape.cpp
+         MyShape.cpp
+     1>c:\users\juny\documents\visual studio 2010\projects\week13_day2\manyshapes\myshape.cpp(32): error C2065: 'm_pen' : 선언되지 않은 식별자입니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\week13_day2\manyshapes\myshape.cpp(33): error C2065: 'm_brush' : 선언되지 않은 식별자입니다.
+         MyRect.cpp
+         MyCurve.cpp
+         MyCircle.cpp
+     1>c:\users\juny\documents\visual studio 2010\projects\week13_day2\manyshapes\mycircle.cpp(19): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\week13_day2\manyshapes\mycircle.cpp(19): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\week13_day2\manyshapes\mycircle.cpp(19): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\week13_day2\manyshapes\mycircle.cpp(19): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\week13_day2\manyshapes\mycircle.cpp(29): warning C4244: '초기화 중' : 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         ManyShapes.cpp
+         MainFrm.cpp
+         ChildView.cpp
+         코드를 생성하고 있습니다...
+     1>"C:\Users\JunY\Documents\Visual Studio 2010\Projects\Week13_Day2\ManyShapes\ManyShapes.vcxproj" 프로젝트를 빌드했습니다(build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:05.30

@@ -1,0 +1,18 @@
+<dialog(대화상자)> ex) 프로젝트 열기 할때 뜨는 것 같은 것들
+
+1. 처음에 프로젝트 생성시  도구상자창에서 버튼 추가
+
+caption으로 버튼 텍스트 수정
+id로 아이디값수정
+
+ui클릭하고 번개모양가서 bn_clicked add하면 그에따른 함수 생성됨
+
+
+2. 버튼에 변수설정하는 법(controll변수): 버튼 왼쪽 클릭 ->변수추가
+ex) m_check2, m_edit
+
+
+3. edit control
+- multiline : true  -> 다중 라인 가능
+- wnat return : true -> 엔터 가능하기  
+- 번개모양 -> EN_SETFOCUS : 마우스로 FOCUS할때 발생

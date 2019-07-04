@@ -1,0 +1,47 @@
+﻿빌드 시작: 2019-06-19 오후 1:18:09
+     1>2 노드의 "C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch18_20(그림그리기,GDI)\HomeWork_6\HomeWork_6.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\HomeWork_6.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\HomeWork_6.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\HomeWork_6.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ChildView.cpp HomeWork_6.cpp MainFrm.cpp
+         MainFrm.cpp
+         HomeWork_6.cpp
+         ChildView.cpp
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch18_20(그림그리기,gdi)\homework_6\childview.cpp(62): warning C4002: 'RGB' 매크로의 실제 매개 변수가 너무 많습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch18_20(그림그리기,gdi)\homework_6\childview.cpp(131): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch18_20(그림그리기,gdi)\homework_6\childview.cpp(134): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch18_20(그림그리기,gdi)\homework_6\childview.cpp(134): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch18_20(그림그리기,gdi)\homework_6\childview.cpp(172): warning C4244: '초기화 중' : 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch18_20(그림그리기,gdi)\homework_6\childview.cpp(173): warning C4244: '초기화 중' : 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch18_20(그림그리기,gdi)\homework_6\childview.cpp(180): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch18_20(그림그리기,gdi)\homework_6\childview.cpp(181): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch18_20(그림그리기,gdi)\homework_6\childview.cpp(185): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch18_20(그림그리기,gdi)\homework_6\childview.cpp(186): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         코드를 생성하고 있습니다...
+       ResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0412" /IDebug\ /nologo /fo"Debug\HomeWork_6.res" HomeWork_6.rc 
+       ManifestResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\HomeWork_6.exe.embed.manifest.res" Debug\HomeWork_6_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch18_20(그림그리기,GDI)\Debug\HomeWork_6.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\HomeWork_6.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch18_20(그림그리기,GDI)\Debug\HomeWork_6.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch18_20(그림그리기,GDI)\Debug\HomeWork_6.lib" /MACHINE:X86 Debug\HomeWork_6.res
+         Debug\HomeWork_6.exe.embed.manifest.res
+         Debug\ChildView.obj
+         Debug\HomeWork_6.obj
+         Debug\MainFrm.obj
+         Debug\stdafx.obj
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\HomeWork_6.exe.embed.manifest" /manifest Debug\HomeWork_6.exe.intermediate.manifest "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         모든 출력이 최신 상태입니다.
+       LinkEmbedManifest:
+         모든 출력이 최신 상태입니다.
+         HomeWork_6.vcxproj -> C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch18_20(그림그리기,GDI)\Debug\HomeWork_6.exe
+       FinalizeBuildStatus:
+         "Debug\HomeWork_6.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\HomeWork_6.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch18_20(그림그리기,GDI)\HomeWork_6\HomeWork_6.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:10.63

@@ -1,0 +1,23 @@
+﻿빌드 시작: 2019-06-19 오후 1:08:14
+     1>2 노드의 "C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch21(마우스)\final_ex03\final_ex03\final_ex03.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\final_ex03.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         모든 출력이 최신 상태입니다.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\final_ex03.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ChildView.cpp
+         ChildView.cpp
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch21(마우스)\final_ex03\final_ex03\childview.cpp(82): error C2086: 'CRect rect' : 재정의
+                 c:\users\juny\documents\visual studio 2010\projects\test_final\ch21(마우스)\final_ex03\final_ex03\childview.cpp(55) : 'rect' 선언을 참조하십시오.
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch21(마우스)\final_ex03\final_ex03\childview.cpp(85): error C2374: 'w' : 재정의. 여러 번 초기화했습니다.
+                 c:\users\juny\documents\visual studio 2010\projects\test_final\ch21(마우스)\final_ex03\final_ex03\childview.cpp(58) : 'w' 선언을 참조하십시오.
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch21(마우스)\final_ex03\final_ex03\childview.cpp(86): error C2374: 'h' : 재정의. 여러 번 초기화했습니다.
+                 c:\users\juny\documents\visual studio 2010\projects\test_final\ch21(마우스)\final_ex03\final_ex03\childview.cpp(59) : 'h' 선언을 참조하십시오.
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch21(마우스)\final_ex03\final_ex03\childview.cpp(88): error C2086: 'CDC memDC' : 재정의
+                 c:\users\juny\documents\visual studio 2010\projects\test_final\ch21(마우스)\final_ex03\final_ex03\childview.cpp(61) : 'memDC' 선언을 참조하십시오.
+     1>c:\users\juny\documents\visual studio 2010\projects\test_final\ch21(마우스)\final_ex03\final_ex03\childview.cpp(91): error C2086: 'CBitmap bmp' : 재정의
+                 c:\users\juny\documents\visual studio 2010\projects\test_final\ch21(마우스)\final_ex03\final_ex03\childview.cpp(64) : 'bmp' 선언을 참조하십시오.
+     1>"C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch21(마우스)\final_ex03\final_ex03\final_ex03.vcxproj" 프로젝트를 빌드했습니다(build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.46

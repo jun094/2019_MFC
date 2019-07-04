@@ -1,0 +1,36 @@
+﻿빌드 시작: 2019-06-14 오후 4:31:20
+     1>2 노드의 "C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch21(마우스)\ex01_mouse\ex01_mouse\ex01_mouse.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\HW_final.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         모든 출력이 최신 상태입니다.
+         모든 출력이 최신 상태입니다.
+       ResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0412" /IDebug\ /nologo /fo"Debug\ex01_mouse.res" ex01_mouse.rc 
+       ManifestResourceCompile:
+         모든 출력이 최신 상태입니다.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch21(마우스)\ex01_mouse\Debug\HW_final.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\HW_final.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch21(마우스)\ex01_mouse\Debug\HW_final.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch21(마우스)\ex01_mouse\Debug\HW_final.lib" /MACHINE:X86 Debug\ex01_mouse.res
+         Debug\HW_final.exe.embed.manifest.res
+         Debug\ChildView.obj
+         Debug\ex01_mouse.obj
+         Debug\MainFrm.obj
+         Debug\MyCircle.obj
+         Debug\MyCurve.obj
+         Debug\MyRect.obj
+         Debug\MyShape.obj
+         Debug\stdafx.obj
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\HW_final.exe.embed.manifest" /manifest Debug\HW_final.exe.intermediate.manifest "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         모든 출력이 최신 상태입니다.
+       LinkEmbedManifest:
+         모든 출력이 최신 상태입니다.
+         ex01_mouse.vcxproj -> C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch21(마우스)\ex01_mouse\Debug\HW_final.exe
+       FinalizeBuildStatus:
+         "Debug\HW_final.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\HW_final.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"C:\Users\JunY\Documents\Visual Studio 2010\Projects\Test_Final\ch21(마우스)\ex01_mouse\ex01_mouse\ex01_mouse.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.79

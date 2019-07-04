@@ -1,0 +1,195 @@
+
+// ChildView.h : CChildView 클래스의 인터페이스
+//
+
+
+#pragma once
+
+
+// CChildView 창
+
+class CChildView : public CWnd
+{
+// 생성입니다.
+public:
+	CChildView();
+
+// 특성입니다.
+public:
+	int m_num;
+	CPoint m_pt1[100]; // 여러개 사각형을 그릴려고함 -> 배열로 점을 생성
+	CPoint m_pt2[100];
+
+	int m_num2;
+	CPoint m_pt3[100]; // 여러개 원을 그릴려고 함
+	CPoint m_pt4[100];
+	bool m_bLButton;
+
+
+// 작업입니다.
+public:
+
+// 재정의입니다.
+	protected:
+	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
+
+// 구현입니다.
+public:
+	virtual ~CChildView();
+
+	// 생성된 메시지 맵 함수
+protected:
+	afx_msg void OnPaint();
+	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg BOOL OnEraseBkgnd(CDC* pDC);
+	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
+	afx_msg void OnLButtonUp(UINT nFlags, CPoint point);
+	afx_msg void OnMouseMove(UINT nFlags, CPoint point);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cpp
+
+// ChildView.cpp : CChildView 클래스의 구현
+//
+
+#include "stdafx.h"
+#include "Week13_Day1.h"
+#include "ChildView.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#endif
+
+
+// CChildView
+
+CChildView::CChildView()
+	//:m_pt1(100,100), m_pt2(200,200), m_bLButton(false)
+	: m_bLButton(false), m_num(0)
+{
+	//m_bLButton = false;
+	
+}
+
+CChildView::~CChildView()
+{
+}
+
+
+BEGIN_MESSAGE_MAP(CChildView, CWnd)
+	ON_WM_PAINT()
+	ON_WM_ERASEBKGND()
+	ON_WM_LBUTTONDOWN()
+	ON_WM_LBUTTONUP()
+	ON_WM_MOUSEMOVE()
+END_MESSAGE_MAP()
+
+
+
+// CChildView 메시지 처리기
+
+BOOL CChildView::PreCreateWindow(CREATESTRUCT& cs) 
+{
+	if (!CWnd::PreCreateWindow(cs))
+		return FALSE;
+
+	cs.dwExStyle |= WS_EX_CLIENTEDGE;
+	cs.style &= ~WS_BORDER;
+	cs.lpszClass = AfxRegisterWndClass(CS_HREDRAW|CS_VREDRAW|CS_DBLCLKS, 
+		::LoadCursor(NULL, IDC_ARROW), reinterpret_cast<HBRUSH>(COLOR_WINDOW+1), NULL);
+
+	return TRUE;
+}
+
+// 그림그리는 곳
+void CChildView::OnPaint() 
+{
+	CPaintDC dc(this); // 그리기를 위한 디바이스 컨텍스트입니다.
+
+	CRect rect;
+	GetClientRect(rect);
+	int w = rect.Width();
+	int h = rect.Height();
+
+	CDC memDC; // 새로운 도화지
+	memDC.CreateCompatibleDC(&dc); // 현재까지 양식만 존재
+	CBitmap bmp;
+	bmp.CreateCompatibleBitmap(&dc,w,h);
+	memDC.SelectObject(bmp); 
+	// 여기까지 그림그리기 준비 완료 (검정색 바탕)
+
+	memDC.Rectangle(0,0,w,h); // 하얀색 사각형으로 창을 덮음 -> 하얀색배경
+
+	/////////////////////////////////////////////////////////////
+	// 여기가 우리가 그림 코딩할 곳
+	for(int i=0;i<m_num;i++)
+	{
+		memDC.Rectangle(m_pt1[i].x, m_pt1[i].y, m_pt2[i].x, m_pt2[i].y);
+	}
+	/////////////////////////////////////////////////////////////
+
+	dc.BitBlt(0,0,w,h,&memDC,0,0,SRCCOPY);
+
+}
+// 화면을 지운다. -> 이것도 기본 포맷
+BOOL CChildView::OnEraseBkgnd(CDC* pDC)
+{
+	//return CWnd::OnEraseBkgnd(pDC);
+	return true;
+}
+
+
+// 마우스 찍어서 시작점 기억
+void CChildView::OnLButtonDown(UINT nFlags, CPoint point)
+{
+	m_pt1[m_num] = point;
+	m_pt2[m_num] = point;
+	m_bLButton = true;
+	SetCapture(); // <-> ReleaseCapture; // 화면 밖에 나가면 그대로 사각형 생성
+	CWnd::OnLButtonDown(nFlags, point);
+
+	m_num++;
+}
+
+// 마우스 땔 때 끝점 기억
+void CChildView::OnLButtonUp(UINT nFlags, CPoint point)
+{
+	m_pt2[m_num-1] = point;
+	m_bLButton = false;
+	ReleaseCapture();
+
+	Invalidate();
+
+	CWnd::OnLButtonUp(nFlags, point);
+}
+
+// 드래깅 될 때도 그리게 할려고 
+void CChildView::OnMouseMove(UINT nFlags, CPoint point)
+{
+	if(m_bLButton == true)
+	{
+		m_pt2[m_num-1] = point; // 움직이고 있으면 두번째 점을 계속 갱신해줌
+		Invalidate();
+	}
+	CWnd::OnMouseMove(nFlags, point);
+}
+

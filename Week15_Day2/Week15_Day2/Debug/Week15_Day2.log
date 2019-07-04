@@ -1,0 +1,17 @@
+﻿빌드 시작: 2019-06-19 오전 4:06:16
+     1>2 노드의 "C:\Users\JunY\Documents\Visual Studio 2010\Projects\Week15_Day2\Week15_Day2\Week15_Day2.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "Debug\Week15_Day2.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ClCompile:
+         모든 출력이 최신 상태입니다.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Week15_Day2.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TextInputDlg.cpp
+         TextInputDlg.cpp
+     1>c:\users\juny\documents\visual studio 2010\projects\week15_day2\week15_day2\textinputdlg.cpp(73): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\week15_day2\week15_day2\textinputdlg.cpp(79): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\week15_day2\week15_day2\textinputdlg.cpp(85): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+     1>c:\users\juny\documents\visual studio 2010\projects\week15_day2\week15_day2\textinputdlg.cpp(67): error C4716: 'CTextInputDlg::OnInitDialog' : 값을 반환해야 합니다.
+     1>"C:\Users\JunY\Documents\Visual Studio 2010\Projects\Week15_Day2\Week15_Day2\Week15_Day2.vcxproj" 프로젝트를 빌드했습니다(build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.47
